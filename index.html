@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ESP8266 Configuration</title>
+  <style>
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>production line</h1>
+  <form id="configForm" action="/api/update" method="POST">
+    <label for="step1">Step 1 Duration (in seconds):</label>
+    <input type="number" id="step1" name="step1" min="2" required>
+    <label for="step2">Step 2 Duration (in seconds):</label>
+    <input type="number" id="step2" name="step2" min="2" required>
+    <label for="step3">Step 3 Duration (in seconds):</label>
+    <input type="number" id="step3" name="step3" min="2" required>
+    <label for="step4">Step 4 Duration (in seconds):</label>
+    <input type="number" id="step4" name="step4" min="2" required>
+    <button type="submit">Update</button>
+  </form>
+</body>
+</html>
